@@ -1,0 +1,22 @@
+<div class="field" id="checkout-shipping-insurance-container" style="display: none;">
+    <ul class="form-list">
+        <li class="control">
+            <input type="checkbox" name="shipping_insurance_applied" id="shipping-insurance-applied" value="1" title="<?php echo $this->__('Use Shipping Insurance') ?>" class="checkbox" /><label for="shipping-insurance-applied"><?php echo $this->__('Use Shipping Insurance') ?></label>
+        </li>
+    </ul>
+    <span id="shipping-insurance-please-wait" class="please-wait" style="display:none;">
+            <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="<?php echo Mage::helper('core')->quoteEscape($this->__('Please wait...')) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Please wait...')) ?>" class="v-middle" /> <?php echo $this->__('Please wait...') ?>
+    </span>
+    <div id="checkout-shipping-insurance-value"></div>
+</div>
+
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/checkout/shippinginsurance.js') ?>"></script>
+<?php if ($this->helper('itr_shippinginsurance')->isShippingInsuranceEnabled()): ?>
+<script type="text/javascript">
+//<![CDATA[
+<?php $allowedCarriers = Itr_ShippingInsurance_Model_ShippingInsurance::getAllowedCarriers(); ?>
+var allowedCarriers = <?php echo json_encode($allowedCarriers); ?>;
+var shippingInsurance = new ShippingInsurance(allowedCarriers);
+//]]>
+</script>
+<?php endif; ?>

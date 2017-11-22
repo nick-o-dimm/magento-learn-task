@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <shippinginsurance translate="label" module="itr_shippinginsurance">
+            <label>Shipping Insurance</label>
+            <tab>sales</tab>
+            <sort_order>315</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <option translate="label">
+                    <label>Shipping Insurance</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                    </fields>
+                </option>
+            </groups>
+        </shippinginsurance>
+        <carriers>
+            <groups>
+                <flatrate>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>72</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>74</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>76</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </flatrate>
+                <freeshipping>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>72</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>74</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>76</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </freeshipping>
+                <tablerate>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>72</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>74</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>76</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </tablerate>
+                <dhl>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>1020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>1030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </dhl>
+                <fedex>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>1020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>1030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </fedex>
+                <ups>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>1020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>1030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </ups>
+                <usps>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>1020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>1030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </usps>
+                <dhlint>
+                    <fields>
+                        <insurance_enabled translate="label">
+                            <label>Insurance Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_enabled>
+                        <insurance_rate_type translate="label">
+                            <label>Insurance Rate Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shippinginsurance/system_config_insurance_ratetype</source_model>
+                            <sort_order>1020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_type>
+                        <insurance_rate_value translate="label">
+                            <label>Insurance Rate Value</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number validate-zero-or-greater</validate>
+                            <sort_order>1030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </insurance_rate_value>
+                    </fields>
+                </dhlint>
+            </groups>
+        </carriers>
+    </sections>
+</config>

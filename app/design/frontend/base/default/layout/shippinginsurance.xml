@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<layout version="1.0.0.0">
+    <checkout_onepage_index>
+        <reference name='checkout.onepage.shipping_method'>
+            <block type='checkout/onepage_shipping_method' name='additional' template='shippinginsurance/checkout/onepage/shipping_method_additional.phtml' />
+        </reference>
+    </checkout_onepage_index>
+
+    <!-- Views -->
+    <sales_order_view>
+        <reference name="order_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_order_view>
+    <sales_order_invoice>
+        <reference name="invoice_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_order_invoice>
+    <sales_order_creditmemo>
+        <reference name="creditmemo_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_order_creditmemo>
+
+    <!-- Print -->
+    <sales_order_print>
+        <reference name="order_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_order_print>
+    <sales_order_printinvoice>
+        <reference name="invoice_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_order_printinvoice>
+    <sales_order_printcreditmemo>
+        <reference name="creditmemo_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_order_printcreditmemo>
+
+    <!-- Emails -->
+    <sales_email_order_items>
+        <reference name="order_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_email_order_items>
+    <sales_email_order_invoice_items>
+        <reference name="invoice_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_email_order_invoice_items>
+    <sales_email_order_creditmemo_items>
+        <reference name="creditmemo_totals">
+            <block type="shippinginsurance/sales_order_total" name="shippinginsurance.sales.order.total" />
+        </reference>
+    </sales_email_order_creditmemo_items>
+
+</layout>
