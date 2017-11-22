@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Itr_ShippingInsurance>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Itr_ShippingInsurance>
+    </modules>
+</config>
